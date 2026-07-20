@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        String message ="is a shell buildin";
+        String message ="is a shell builtin";
         while (true) {
         System.out.print("$ ");
         String command = sc.nextLine();
