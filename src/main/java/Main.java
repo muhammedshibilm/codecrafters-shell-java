@@ -8,9 +8,9 @@ public class Main {
         System.out.print("$ ");
         String command = sc.nextLine();
 
-        if (command.equals("exit")){
+        if (command.contains("exit")){
             System.out.println("exit " + message);
-        }else if (command.startsWith("echo ")) {
+        }else if (command.contains("echo")) {
             //  System.out.println(command.substring(5));
             System.out.println("echo "+ message);
         }else
