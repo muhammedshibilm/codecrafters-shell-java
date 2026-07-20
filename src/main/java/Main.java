@@ -8,13 +8,14 @@ public class Main {
         System.out.print("$ ");
         String command = sc.nextLine();
         
-        String[] keywords = command.split("\\s+");
-        if (keywords[1] == "exit"){
+        String[] keywords = command.trim().split("\\s+");
+
+        if (keywords[1].equals("exit")){
             System.out.println("exit " + message);
-        }else if (keywords[1] == "echo") {
+        }else if (keywords[1].equals("echo")) {
             //  System.out.println(command.substring(5));
             System.out.println("echo "+ message);
-        }else if ( keywords[1] ==  "type"){
+        }else if ( keywords[1].equals( "type")){
                 System.out.println("type "+message);
         }else{
         System.out.println(command.split("\\s+")[1] + ": command not found");
