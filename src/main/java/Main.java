@@ -18,7 +18,7 @@ public class Main {
         }else if ( keywords[1].equals( "type")){
                 System.out.println("type "+message);
         }else{
-        System.out.println(command.split("\\s+")[1] + ": command not found");
+        System.out.println(command.split("\\s+")[1] + ": not found");
         }
     
 } }
